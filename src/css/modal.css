@@ -96,7 +96,15 @@
   border-color: var(--error-color);
 }
 
+.modal-form:focus-within .modal-input {
+  border-color: var(--error-color);
+}
+
 .modal-hint {
+  display: none;
+}
+
+.modal-form:focus-within .modal-hint {
   display: flex;
   margin-left: 12px;
 }
@@ -110,13 +118,9 @@
   color: var(--error-color);
 }
 
-/* .modal-input:not(:placeholder-shown):required + .modal-hint {
+.modal-input:not(:placeholder-shown):required:valid + .modal-hint {
   display: none;
-} */
-
-/* .input:not(:placeholder-shown):required+span {
-  display: none;
-} */
+}
 
 .modal-submit-btn {
   width: 106px;
@@ -134,18 +138,17 @@
   background-color: var(--button-green);
 } */
 
-@media screen and (min-width: 480px) {
-  .modal-window {
-    width: 458px;
-    height: 449px;
-    padding: 32px;
-  }
-}
-
 .modal__form--submit-attempted:valid {
   background-color: var(--button-green);
   border-color: var(--dark-green);
 }
 .modal__form--submit-attempted-invalid {
   border-color: var(--error-color);
+}
+
+@media screen and (min-width: 480px) {
+  .modal-window {
+    width: 458px;
+    min-height: 449px;
+  }
 }
