@@ -1,3 +1,8 @@
-.hero-img-wrap {
+.hero-section {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.hero-gallery-wrap {
   display: none;
 }
