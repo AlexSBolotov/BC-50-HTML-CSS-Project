@@ -1,20 +1,25 @@
+.footer-section{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
 .footer-block{
     padding-top: 100px;
     padding-bottom: 100px;
-    background: var(--color-background);
     box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
-position: relative;
+
+
 }
 .footer-block-menu{
-    display: flex;
+display: flex;
 align-items: center;
 padding-bottom: 80px;
-    
 }
 .footer-logo{
     width: 66px;
     height: 52px;
     margin-right: 148px;
+
 }
 .footer-menu-list{
     display: flex;
@@ -31,6 +36,9 @@ color: var( --black);
         line-height: 1.5;
 color: var(--black);
 margin-bottom: 12px;
+}
+.footer-btn:hover, .footer-btn:focus{
+    border-color: var(--yellow-main);
 }
 .offers-input{
     margin-right: 13px;
@@ -71,9 +79,11 @@ color: var(--black);
         line-height: 1.16;
         text-decoration:underline;
 }
+
 .footer-block-additional-info{
     display: flex;
     justify-content: space-between;
+
 }
 .footer-additional-info-list{
     display: flex;
@@ -93,9 +103,19 @@ color: var(--black);
         color: var(--black);
 }
 .footer-bg-images-block{
-        justify-content: center;
+ 
             position: absolute;
-            display: flex;
-            align-items: end;
+      
+    
             bottom: 0;
+    z-index: -1;
+}
+@media screen and (min-width: 480px) {
+
+}
+@media screen and (min-width: 768px){
+
+}
+@media screen and (min-width: 1280px){
+
 }
