@@ -19,9 +19,53 @@
     <link rel="stylesheet" href="/BC-50-HTML-CSS-Project/assets/index-96d148ec.css">
   </head>
   <body>
-    <head>
-    <p>Helloworld</p>
-</head>
+    <header class="header">
+  <div class="header-container container">
+    <svg class="header-logo">
+      <use href=""></use>
+    </svg>
+
+    <div class="header-wraper">
+      <nav class="header-navigation">
+        <ul class="header-list">
+          <li class="header-item">
+            <a class="header-link" href="">Home</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="">About</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="">Service</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="">Menu</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- кнопка -->
+
+      <button type="button" class="mobile-button">
+        Order Now
+        <svg class="mobile-button-icon">
+          <use href=""></use>
+        </svg>
+      </button>
+
+      <!-- кнопка бургер -->
+      <button type="button" class="mobile-burger">
+        burger
+        <svg class="mobile-burger-icon">
+          <use href=""></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
     <section class="hero-section">
   <div class="container">
     <div class="hero-content-wrap">
@@ -63,7 +107,34 @@
     </div>
 </section>
     
-    
+    <!-- моб меню НАПОВНЕННЯ -->
+
+<div class="mobile-menu-wrapper">
+  <button class="mobile-menu-close-btn">
+    close
+    <svg class="mobile-menu-close-icon">
+      <use href=""></use>
+    </svg>
+  </button>
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+      <a class="mobile-menu-link" href="">Home</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a class="mobile-menu-link" href="">About</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a class="mobile-menu-link" href="">Service</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a class="mobile-menu-link" href="">Menu</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a class="mobile-menu-link" href="">Contact</a>
+    </li>
+  </ul>
+</div>
+
     
   </body>
 </html>
