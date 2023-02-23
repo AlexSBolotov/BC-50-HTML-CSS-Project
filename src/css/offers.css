@@ -31,6 +31,14 @@
     
 }
 
+.offers-input-wrap:not(:placeholder-shown):required:valid {
+  border-color: var(--dark-green);
+}
+
+.offers-input-wrap:not(:placeholder-shown):required:invalid {
+  border-color: var(--error-color);
+}
+
 .offers-btn {
     width: 103px;
     height: 42px;
