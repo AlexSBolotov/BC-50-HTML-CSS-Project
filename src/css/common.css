@@ -12,12 +12,12 @@
 }
 
 /* Мобільне меню
-  <button type='button' class='menu-open' data-menu-open> 
+  <button type='button' data-menu-open> 
   <div class="mob-menu is-hidden" data-menu>
   <button type="button" class="mob-close-btn" data-menu-close> */
 
-/* Мобільне меню
-<button type='button' class='menu-open' data-modal-open> 
+/* Модальне меню
+<button type='button' data-modal-open> 
 <div class="backdrop is-hidden" data-modal>
 <div class="modal">
 <button type="button" class="modal-close-btn" data-modal-close> */
