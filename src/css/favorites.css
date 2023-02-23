@@ -52,8 +52,30 @@
   }
   .favorites-title {
     font-size: 42px;
-    line-height: 1.16;
+    line-height: 1.17;
     /* width: 656px; */
+  }
+  .favorites-text {
+    margin-bottom: 60px;
+    font-size: 16px;
+    line-height: 1.19;
+  }
+  .favorites-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+  .favorites-item {
+    /* max-width: 282px; */
+    /* max-width: calc(100% - 40px); */
+    width: calc((100% - 32px) / 2);
+    border-width: 14px;
+    padding: 20px;
+  }
+  .favorites-hidden {
+    display: block;
   }
 }
 
