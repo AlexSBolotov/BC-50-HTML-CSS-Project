@@ -58,16 +58,11 @@ screen and (min-resolution:2dppx) and (min-width: 480px) {
 
 @media screen and (min-width: 480px) and (max-width:767px)  {
      .customers-title {
-          font-style: normal;
-          font-weight: 700;
-          font-size: 28px;
-          line-height: 1.17;
-          color: var(--black);
           margin-bottom: 20px;
      }
 }
 
-.customers-subtitle-monile{
+.customers-subtitle-monile {
      font-style: normal;
      font-weight: 400;
      font-size: 14px;
@@ -78,12 +73,7 @@ screen and (min-resolution:2dppx) and (min-width: 480px) {
 
 
 @media screen and (min-width: 480px) and (max-width:767px)  {
-     .customers-subtitle-mobile {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 1.14;
-          color:var(--black);  
+     .customers-subtitle-mobile {  
           margin-bottom: 32px;
      }
 }
@@ -107,7 +97,6 @@ screen and (min-resolution:2dppx) and (min-width: 480px) {
 
 @media screen and (min-width: 480px) and (max-width:767px) {
      .customers-article {
-          background-color: var(--white-color);
           margin-bottom:24px;
           border-radius: 0px 30px 30px 30px;
           height: 247px;
@@ -144,11 +133,6 @@ screen and (min-resolution:2dppx) and (min-width: 480px) {
 
 @media screen and (min-width: 480px) and (max-width:767px)  {
      .customers-review {
-          font-style: normal;
-          font-weight: 700;
-          font-size: 16px;
-          line-height: 1.18;
-          color: var(--black);
           margin-top: 28px;
           margin-bottom: 40px;
           padding-right: 8px;
@@ -164,6 +148,7 @@ screen and (min-resolution:2dppx) and (min-width: 480px) {
 @media screen and (min-width: 480px) and (max-width:767px)  {
      .customers-info {
           display: flex;
+          margin-bottom: 12px;
      }
 }
 
@@ -186,7 +171,6 @@ screen and (min-resolution:2dppx) and (min-width: 480px) {
 
 @media screen and (min-width: 480px) and (max-width:767px)  {
      .customers-box-sideline {
-          margin-left: 16px;
           border-right: 0.85px solid var(--dark-green);
           padding-right: 14px;
      }
@@ -202,17 +186,6 @@ screen and (min-resolution:2dppx) and (min-width: 480px) {
      margin-bottom: 2px;
 }
 
-@media screen and (min-width: 480px) and (max-width:767px)  {
-     .customers-name {
-          font-style: normal;
-          font-weight: 500;
-          font-size: 14px;
-          line-height: 1.5;
-          color: var(--black);
-     }
-}
-
-
 .customers-description {
      font-style: normal;
      font-weight: 400;
@@ -221,15 +194,6 @@ screen and (min-resolution:2dppx) and (min-width: 480px) {
      color: var(--black);
 }
 
-@media screen and (min-width: 480px) and (max-width:767px)  {
-     .customers-description {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 1.5;
-          color: var(--black);
-     }
-}
 
 
 
