@@ -1,0 +1,53 @@
+.offers-title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.offers-text {
+    width: 532px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.offers-form {
+    display: flex;
+    gap: 32px;
+}
+.offers-input-wrap {
+    width: 394px;
+    background-color: var(--color-background);
+    border: 0.854167px solid var(--yellow-main);
+    border-radius: 30px;
+    padding-left: 11px;
+}
+
+.offers-input-wrap::placeholder {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #505050;
+    
+}
+
+.offers-btn {
+    width: 103px;
+    height: 42px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    background-color: var(--button-green);
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+    
