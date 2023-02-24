@@ -41,6 +41,13 @@
     
 }
 
+.offers-input-wrap::placeholder {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #505050;
+    
+}
+
 .offers-input-wrap:not(:placeholder-shown):required:valid {
     border-color: var(--dark-green);
 }
@@ -49,14 +56,29 @@
     border-color:  var(--error-background);
 }
 
+.offers-desc {
+    position: absolute;
+    display: none;
 
-.offers-input-wrap::placeholder {
-    font-size: 12px;
-    line-height: 1.5;
-    color: #505050;
-    
 }
 
+.offers-input-text {
+    margin-left: 4px;
+    font-size: 10px;
+    line-height: 1.5;
+    color: var(--error-color);
+
+}
+
+.offers-input-wrap:not(:placeholder-shown):required:valid + .offers-desc {
+    display: none;
+}
+.offers-input-wrap:not(:placeholder-shown):required:invalid + .offers-desc {
+    display: flex;
+    margin-top: 4px;
+    -webkit-animation: fadeIn var(--duration);
+    animation: fadeIn var(--duration);
+}
 
 .offers-btn {
     display: block;
@@ -91,7 +113,7 @@
 
 @media screen and (min-width:480px) {
     .container-offers {
-        width: 100%;
+        width: 480px;
         padding:17px 20px 60px;
         margin-left: auto;
         margin-right: auto;
@@ -101,7 +123,7 @@
     .offers-title {
         width: 100%;
         font-size: 28px;
-        margin-top: 17px;
+        /* margin-top: 17px; */
         margin-bottom: 20px;
     }
 
@@ -169,11 +191,9 @@
         margin: 0;
     }
 
-   
-
     .offers-image {
         width: 281px;
-        top: -50px;
+        top: -70px;
         left: 25%;
         transform: translateX(93%);
     }
