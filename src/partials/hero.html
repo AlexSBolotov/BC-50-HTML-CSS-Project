@@ -1,5 +1,5 @@
-<section class="hero-section">
-  <div class="container">
+<section class="hero-section" id="hero">
+  <div class="hero-container container">
     <div class="hero-content-wrap">
       <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
       <p class="hero-text">
@@ -7,28 +7,71 @@
         straight to your doorstep, no matter where you are. Order now and enjoy
         a hassle-free and delicious meal from the comfort of your own home.
       </p>
-      <button type="hero-btn">Order Now</button>
+      <button class="hero-btn" type="button" data-modal-open>Order Now</button>
     </div>
     <div class="hero-gallery-wrap">
-      <div class="gallery-img-wrap">
-        <ul class="gallery-list">
-          <li class="gallery-item">
-            <img src="" alt="meatball dish with sour cream" />
-          </li>
-          <li class="gallery-item"></li>
-          <li class="gallery-item"></li>
-        </ul>
-      </div>
-      <div class="button-left">
-        <svg class="gallery-icon">
-          <use href=""></use>
+      <ul class="gallery-list swiper">
+        <li class="gallery-item swiper-wrapper">
+          <picture class="swiper-slide">
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/hero/hero-gallery-tablet-1.png    1x,
+                ../img/hero/hero-gallery-tablet-1@2x.png 2x
+              "
+            />
+            <img
+              src="../img/hero/hero-gallery-tablet-1.png"
+              alt="meatballs with cream sauce"
+              srcset="../img/hero/hero-gallery-tablet-1@2x.png 2x"
+              width="292px"
+              height="292px"
+            />
+          </picture>
+          <picture class="swiper-slide">
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/hero/hero-gallery-tablet-2.png    1x,
+                ../img/hero/hero-gallery-tablet-2@2x.png 2x
+              "
+            />
+            <img
+              src="../img/hero/hero-gallery-tablet-2.png"
+              alt="fresh salad"
+              srcset="../img/hero/hero-gallery-tablet-2@2x.png 2x"
+              width="292px"
+              height="292px"
+            />
+          </picture>
+          <picture class="swiper-slide">
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/hero/hero-gallery-tablet-3.png    1x,
+                ../img/hero/hero-gallery-tablet-3@2x.png 2x
+              "
+            />
+            <img
+              src="../img/hero/hero-gallery-tablet-3.png"
+              alt="avocado with vegetables and eggs"
+              srcset="../img/hero/hero-gallery-tablet-3@2x.png 2x"
+              width="292px"
+              height="292px"
+            />
+          </picture>
+        </li>
+      </ul>
+      <button type="button" class="btn-prev swiper-button-prev">
+        <svg class="gallery-icon" width="29.05" height="16.42">
+          <use href="../img/hero/hero-icons.svg#icon-btn-prev"></use>
         </svg>
-      </div>
-      <div class="button-right">
-        <svg class="gallery-icon">
-          <use href=""></use>
+      </button>
+      <button type="button" class="btn-next swiper-button-next">
+        <svg class="gallery-icon" width="29.05" height="16.42">
+          <use href="../img/hero/hero-icons.svg#icon-btn-next"></use>
         </svg>
-      </div>
+      </button>
     </div>
   </div>
 </section>

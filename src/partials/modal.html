@@ -1,6 +1,6 @@
-<div class="backdrop">
+<div class="backdrop is-hidden" data-modal>
   <div class="modal-window">
-    <button class="modal-close-btn" type="button">
+    <button class="modal-close-btn" type="button" data-modal-close>
       <svg class="modal-close-icon" width="24" height="24">
         <use href="../img/modal/modal-icons.svg#icon-close"></use>
       </svg>
@@ -20,6 +20,14 @@
           pattern="[a-zA-Z]+"
           title="The name must be between 3 and 25 characters"
         />
+        <span class="modal-hint">
+          <svg class="modal-hint-icon" width="12" height="12">
+            <use href="../img/modal/modal-icons.svg#icon-frame"></use>
+          </svg>
+          <p class="modal-text-hint">
+            The name must be between 3 and 25 characters
+          </p>
+        </span>
       </label>
       <label class="modal-form-field">
         <span class="modal-input-desc">Phone number</span>
@@ -32,6 +40,14 @@
           pattern="\+[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
           title=" This phone must be in the format  099 000 00 00"
         />
+        <span class="modal-hint">
+          <svg class="modal-hint-icon" width="12" height="12">
+            <use href="../img/modal/modal-icons.svg#icon-frame"></use>
+          </svg>
+          <p class="modal-text-hint">
+            This phone must be in the format 099 000 00 00
+          </p>
+        </span>
       </label>
       <label class="modal-form-field">
         <span class="modal-input-desc">E-mail</span>
@@ -43,6 +59,12 @@
           required
           title="Please enter a valid email address"
         />
+        <span class="modal-hint">
+          <svg class="modal-hint-icon" width="12" height="12">
+            <use href="../img/modal/modal-icons.svg#icon-frame"></use>
+          </svg>
+          <p class="modal-text-hint">Please enter a valid email address</p>
+        </span>
       </label>
       <button class="modal-submit-btn" type="submit">Send</button>
     </form>
