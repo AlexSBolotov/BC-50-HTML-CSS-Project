@@ -14,4 +14,6 @@
   --modal-background: rgba(94, 99, 99, 0.7);
   --color-background: #fefefe;
   --color-background2: #f5f5f5;
+  --duration: 250ms;
+  --timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
