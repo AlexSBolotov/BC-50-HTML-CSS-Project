@@ -80,7 +80,7 @@
 .offers-image {
     position: absolute;
     content: " ";
-    width: 161px;
+    /* width: 161px; */
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -133,7 +133,7 @@
     }
 
     .container-offers {
-        width: 100%;
+        width: 768px;
         padding: 82px 32px 100px;
         margin-left: auto;
         margin-right: auto;
