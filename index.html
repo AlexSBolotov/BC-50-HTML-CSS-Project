@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
     
-    <link rel="stylesheet" href="/BC-50-HTML-CSS-Project/assets/index-d4d60e8e.css">
+    <link rel="stylesheet" href="/BC-50-HTML-CSS-Project/assets/index-259bb582.css">
   </head>
   <body>
     <header class="header">
@@ -31,19 +31,19 @@
         <nav class="header-navigation">
           <ul class="header-list">
             <li class="header-item">
-              <a class="header-link" href="#">Home</a>
+              <a class="header-link" href="#header">Home</a>
             </li>
             <li class="header-item">
-              <a class="header-link" href="#">About</a>
+              <a class="header-link" href="#preferences">About</a>
             </li>
             <li class="header-item">
-              <a class="header-link" href="#">Service</a>
+              <a class="header-link" href="#offers">Service</a>
             </li>
             <li class="header-item">
-              <a class="header-link" href="#">Menu</a>
+              <a class="header-link" href="#favorites">Menu</a>
             </li>
             <li class="header-item">
-              <a class="header-link" href="#">Contact</a>
+              <a class="header-link" href="#footer">Contact</a>
             </li>
           </ul>
         </nav>
@@ -54,11 +54,40 @@
       </div>
     </div>
 
-    <button type="button" class="mobile-burger" data-menu-open>
-      <svg class="mobile-burger-icon">
-        <use href="/BC-50-HTML-CSS-Project/assets/header-icon-fed71f5d.svg#icon-burger"></use>
-      </svg>
-    </button>
+    <div class="mobile-menu">
+      <button type="button" class="mobile-burger" data-menu-open>
+        <svg class="mobile-burger-icon">
+          <use href="/BC-50-HTML-CSS-Project/assets/header-icon-fed71f5d.svg#icon-burger"></use>
+        </svg>
+      </button>
+
+      <div class="mobile-menu-wrapper is-hidden" data-menu>
+        <div class="mobile-menu-container">
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#header">Home</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#preferences">About</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#offers">Service</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#favorites">Menu</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#footer">Contact</a>
+            </li>
+          </ul>
+          <button class="mobile-menu-close-btn" data-menu-close>
+            <svg class="mobile-menu-close-icon">
+              <use href="/BC-50-HTML-CSS-Project/assets/header-icon-fed71f5d.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -463,29 +492,31 @@
     </div>
 
 </footer>
-    <div class="container mobile-menu-wrapper is-hidden" data-menu>
-  <button class="mobile-menu-close-btn" data-menu-close>
-    <svg class="mobile-menu-close-icon">
-      <use href="/BC-50-HTML-CSS-Project/assets/header-icon-fed71f5d.svg#icon-close"></use>
-    </svg>
-  </button>
-  <ul class="mobile-menu-list">
-    <li class="mobile-menu-item">
-      <a class="mobile-menu-link" href="">Home</a>
-    </li>
-    <li class="mobile-menu-item">
-      <a class="mobile-menu-link" href="">About</a>
-    </li>
-    <li class="mobile-menu-item">
-      <a class="mobile-menu-link" href="">Service</a>
-    </li>
-    <li class="mobile-menu-item">
-      <a class="mobile-menu-link" href="">Menu</a>
-    </li>
-    <li class="mobile-menu-item">
-      <a class="mobile-menu-link" href="">Contact</a>
-    </li>
-  </ul>
+    <div class="mobile-menu-wrapper is-hidden" data-menu>
+  <div class="mobile-menu-container">
+    <ul class="mobile-menu-list">
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="#header">Home</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="#preferences">About</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="#offers">Service</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="#favorites">Menu</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="#footer">Contact</a>
+      </li>
+    </ul>
+    <button class="mobile-menu-close-btn" data-menu-close>
+      <svg class="mobile-menu-close-icon">
+        <use href="/BC-50-HTML-CSS-Project/assets/header-icon-fed71f5d.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
 </div>
 
     <div class="backdrop is-hidden" data-modal>
