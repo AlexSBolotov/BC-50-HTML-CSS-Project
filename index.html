@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     
-    <link rel="stylesheet" href="/BC-50-HTML-CSS-Project/assets/index-74389728.css">
+    <link rel="stylesheet" href="/BC-50-HTML-CSS-Project/assets/index-322461b8.css">
   </head>
   <body>
     <header class="header">
@@ -30,28 +30,30 @@
         <nav class="header-navigation">
           <ul class="header-list">
             <li class="header-item">
-              <a class="header-link" href="">Home</a>
+              <a class="header-link" href="#">Home</a>
             </li>
             <li class="header-item">
-              <a class="header-link" href="">About</a>
+              <a class="header-link" href="#">About</a>
             </li>
             <li class="header-item">
-              <a class="header-link" href="">Service</a>
+              <a class="header-link" href="#">Service</a>
             </li>
             <li class="header-item">
-              <a class="header-link" href="">Menu</a>
+              <a class="header-link" href="#">Menu</a>
             </li>
             <li class="header-item">
-              <a class="header-link" href="">Contact</a>
+              <a class="header-link" href="#">Contact</a>
             </li>
           </ul>
         </nav>
 
-        <button type="button" class="mobile-button">Order Now</button>
+        <button type="button" class="mobile-button" data-modal-open>
+          Order Now
+        </button>
       </div>
     </div>
 
-    <button type="button" class="mobile-burger">
+    <button type="button" class="mobile-burger" data-menu-open>
       <svg class="mobile-burger-icon">
         <use href="/BC-50-HTML-CSS-Project/assets/header-icon-fed71f5d.svg#icon-burger"></use>
       </svg>
@@ -453,9 +455,8 @@
 </div>
 
 </footer>
-    <div class="mobile-menu-wrapper">
-  <button class="mobile-menu-close-btn">
-    clos
+    <div class="container mobile-menu-wrapper is-hidden" data-menu>
+  <button class="mobile-menu-close-btn" data-menu-close>
     <svg class="mobile-menu-close-icon">
       <use href="/BC-50-HTML-CSS-Project/assets/header-icon-fed71f5d.svg#icon-close"></use>
     </svg>
