@@ -28,8 +28,8 @@
   border-radius: 30px;
 
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing);
 }
 
 .hero-btn:is(:hover, :focus, :active) {
@@ -74,12 +74,7 @@
     padding-left: 8px;
   }
 
-  .gallery-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  .hero-gallery-inner-wrap {
     width: 320px;
     height: 320px;
 
@@ -105,8 +100,8 @@
     border-radius: 4px !important;
 
     transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing);
   }
 
   .btn-prev:is(:hover),
