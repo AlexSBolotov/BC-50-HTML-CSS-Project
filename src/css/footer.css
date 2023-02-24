@@ -257,8 +257,6 @@ transition: border-color var(--duration) var(--timing);
 .footer-bg-images-block{
  
             position: absolute;
-      
-    
             bottom: 0;
     z-index: -1;
 }
