@@ -25,7 +25,8 @@
   gap: 20px;
 }
 .favorites-item {
-  max-width: 100%;
+  /* max-width: 100%; */
+  width: 280px;
 }
 .favorites-link {
   display: block;
