@@ -127,6 +127,9 @@
     .footer-menu-link:focus{
         color: var(--button-green);
     }
+    .footer-menu-link:focus, .footer-menu-link:hover{
+        color: var(--button-green);
+    }
 
     .footer-menu-list {
         margin-right: 233px;
