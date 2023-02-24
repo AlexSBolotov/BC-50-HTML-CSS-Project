@@ -6,7 +6,8 @@
 
 
 .container-offers {
-    padding-bottom: 100px;
+    padding-bottom: 60px;
+    padding-top: 17px;
 }
 
 .offers-title {
@@ -78,23 +79,26 @@
 
 .offers-image {
     position: absolute;
+    content: " ";
+    width: 161px;
     top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 161px;
+    transform: translateX(-50%);
+    
+    /* min-width: 161px; */
 }
 
 @media screen and (min-width:480px) {
     .container-offers {
         width: 100%;
-        padding:0px 20px;
+        padding:17px 20px 60px;
         margin-left: auto;
         margin-right: auto;
 
     }
 
     .offers-title {
-        width: 280px;
+        width: 100%;
         font-size: 28px;
         margin-top: 17px;
         margin-bottom: 20px;
@@ -106,26 +110,99 @@
     }
 
     .offers-form {
-        display: inline-block;
         width: 100%;
-        padding-bottom: 60px;
         
     }
 
     .offers-input-wrap {
         display: inline;
         width: 100%;
-        margin-bottom: 20px;
     }
 
     .offers-btn {
-        position: absolute;
-        right: 20px;
-        bottom: 20px;
+        margin-left: auto;
+        margin-top: 20px;
     }
 
     
 }
+
+@media screen and (min-width: 768px) {
+    .offers-section {
+        padding: 0;
+    }
+
+    .container-offers {
+        width: 100%;
+        padding: 82px 32px 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .offers-title {
+        font-size: 42px;
+        margin-top: 0;
+       
+    }
+
+    .offers-text {
+        width: 520px;
+        font-size: 16px;
+        line-height: 1.5;
+        
+    }
+
+    .offers-form {
+        display: flex;
+        gap: 22px;
+    }
+
+    .offers-input-wrap {
+        width: 395px;
+    }
+
+    .offers-btn {
+        display: block;
+        margin: 0;
+    }
+
+   
+
+    .offers-image {
+        width: 281px;
+        top: -50px;
+        left: 25%;
+        transform: translateX(93%);
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    .offers-section {
+        padding-top: 50px;
+    }
+
+    .container-offers {
+        width: 1248px;
+        padding:  0px 0px 100px;
+
+    }
+
+    .offers-form {
+        gap: 32px;
+    }
+
+  
+    .offers-image {
+        width: 608px;
+        top: 0;
+        left: 50%;
+        transform: none;
+    }
+
+}
+
+
 
 
 
