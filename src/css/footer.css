@@ -216,7 +216,7 @@ margin-bottom: 12px;
 .footer-btn:hover, .footer-btn:focus{
     border-color: var(--yellow-main);
 }
-.footer-input-wrap{
+.offers-input-wrap{
     margin-right: 13px;
 width: 279px;
     height: 42px;
@@ -264,16 +264,16 @@ transition: border-color var(--duration) var(--timing);
 }
 
 
-.footer-input-wrap:not(:placeholder-shown):required:valid {
+.offers-input-wrap:not(:placeholder-shown):required:valid {
     border-color: var(--dark-green);
 }
 
-.footer-input-wrap:not(:placeholder-shown):required:invalid {
+.offers-input-wrap:not(:placeholder-shown):required:invalid {
     border-color: var(--error-background);
 }
 
 
-.footer-input-wrap::placeholder {
+.offers-input-wrap::placeholder {
     font-size: 12px;
     line-height: 1.5;
     color: #505050;
