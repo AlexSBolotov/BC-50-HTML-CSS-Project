@@ -1,4 +1,4 @@
-const swiper = new Swiper('.gallery-list', {
+const swiper = new Swiper('.hero-gallery-inner-wrap', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
