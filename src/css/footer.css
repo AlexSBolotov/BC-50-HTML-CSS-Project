@@ -316,17 +316,17 @@ transition: color var(--duration) var(—timing);    }
 .footer-input-wrap:not(:placeholder-shown):required:invalid {
     border-color: var(--error-background);
 }
-.footer-input-wrap:not(:placeholder-shown):required:valid+.foter-input-text {
+.footer-input-wrap:not(:placeholder-shown):required:valid+.footer-desc {
     display: none;
 }
 
-.footer-input-wrap:not(:placeholder-shown):required:invalid+.foter-input-text {
+.footer-input-wrap:not(:placeholder-shown):required:invalid+.footer-desc {
     display: flex;
     margin-top: 4px;
     -webkit-animation: fadeIn var(--duration);
     animation: fadeIn var(--duration);
 }
-.foter-input-text{
+.footer-desc{
 position: absolute;
     display: none;
             font-size: 10px;
