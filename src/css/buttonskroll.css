@@ -7,24 +7,22 @@
   cursor: pointer;
   width: 44px;
   height: 44px;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing);
-  transition-property: background-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1s var(--timing);
   opacity: 0.5;
 }
 
 .btn-up::before {
   content: '';
-  text-align: center;
-  position: absolute;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+  background-image: url(../img/chevron-small-up.svg);
   width: 20px;
   height: 20px;
   left: 12px;
   top: 12px;
-  background-image: url(../img/chevron-small-up.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 22px 22px;
 }
 
 .btn-up_hide {
@@ -37,6 +35,6 @@
 
 @media (hover: hover) and (pointer: fine) {
   .btn-up:hover {
-    background-color: var(--dark-green); /* цвет заднего фона при наведении */
+    background-color: var(--dark-green);
   }
 }
