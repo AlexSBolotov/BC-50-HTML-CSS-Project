@@ -18,7 +18,20 @@
     margin-bottom: 24px;
 }
 
-.offers-input-wrap {
+.offers-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.offers-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.offers-input {
   
     width: 100%;
     height: 42px;
@@ -30,24 +43,26 @@
     
 }
 
-.offers-input-wrap::placeholder {
+.offers-input::placeholder {
     font-size: 12px;
     line-height: 1.5;
     color: #505050;
     
 }
 
-.offers-input-wrap:not(:placeholder-shown):required:valid {
+.offers-input:not(:placeholder-shown):required:valid {
     border-color: var(--dark-green);
 }
 
-.offers-input-wrap:not(:placeholder-shown):required:invalid {
+.offers-input:not(:placeholder-shown):required:invalid {
     border-color:  var(--error-background);
 }
 
 .offers-desc {
     position: absolute;
     display: none;
+    bottom: -16px;
+
 
 }
 
@@ -59,10 +74,10 @@
 
 }
 
-.offers-input-wrap:not(:placeholder-shown):required:valid + .offers-desc {
+.offers-input:not(:placeholder-shown):required:valid + .offers-desc {
     display: none;
 }
-.offers-input-wrap:not(:placeholder-shown):required:invalid + .offers-desc {
+.offers-input:not(:placeholder-shown):required:invalid + .offers-desc {
     display: flex;
     margin-top: 4px;
     -webkit-animation: fadeIn var(--duration);
@@ -88,7 +103,7 @@
 }
 
 .offers-btn {
-    display: block;
+    
     width: 103px;
     height: 42px;
     font-weight: 500;
@@ -98,7 +113,7 @@
     border-radius: 30px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-left: auto;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     outline: none;
 }
 
@@ -120,20 +135,7 @@
 }
 
 @media screen and (min-width:480px) {
-    .offers-section {
-        padding:17px 20px 60px;
-    }
-
-
-    .container-offers {
-        width: 440px;
-        padding: 20px 0px 0px 0px;
-        
-       
-        margin-left: auto;
-        margin-right: auto;
-
-    }
+  
 
     .offers-title {
         width: 100%;
@@ -152,16 +154,12 @@
         
     }
 
-    .offers-input-wrap {
-        display: inline;
+    .offers-input {
+        
         width: 100%;
       
     }
 
-    .offers-btn {
-        margin-left: auto;
-        margin-top: 20px;
-    }
 
    
 
@@ -172,13 +170,6 @@
     .offers-section {
         padding-top: 82px;
         padding-bottom: 100px;
-    }
-
-    .container-offers {
-        width: 768px;
-        padding: 0;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .offers-title {
@@ -195,18 +186,19 @@
     }
 
     .offers-form {
-        
+        flex-direction: row;
         gap: 22px;
+        
     }
 
-    .offers-input-wrap {
+    .offers-input {
         width: 395px;
-        margin-right: 22px;
+        
     }
 
     .offers-btn {
-        display:inline-block;
-        margin: 0;
+       margin-left: 0;
+       margin-top: 0;
     }
 
     .offers-image {
@@ -223,22 +215,16 @@
         padding: 50px 0px 100px;
     }
 
-    .container-offers {
-        width: 1248px;
-        padding: 0 16px;
-      
-
-    }
-
-    .offers-form {
+      .offers-form {
         gap: 32px;
+        
     }
 
-    .offers-input-wrap {
-        margin-right: 32px;
+    .offers-btn {
+        margin-top: 0;
+        margin-left: 0;
     }
 
-  
     .offers-image {
         width: 608px;
         top: 0;
