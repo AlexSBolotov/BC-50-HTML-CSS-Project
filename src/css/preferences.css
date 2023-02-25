@@ -1,4 +1,6 @@
-.preferences-main-block {
+.preferences-section {
+  padding-top: 70px;
+  padding-bottom: 72px;
   background-image: url(../img/preferences/mobile-bg1x.webp);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -8,9 +10,15 @@
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .preferences-main-block {
+  .preferences-section {
     background-image: url(../img/preferences/mobile-bg@2x.webp);
   }
+}
+
+.preferences-main-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
 }
 
 .preferences-border-apple {
@@ -20,9 +28,9 @@
   align-items: center;
   border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
-  margin-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
+  transition: border-color var(--duration) var(--timing);
 }
 
 .preferences-border-apple:hover {
@@ -63,7 +71,6 @@
 
 .preferences-container-img {
   display: flex;
-  padding-top: 70px;
 }
 
 .preferences-tablet-img {
@@ -73,7 +80,6 @@
 .preferences-wraper {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 72px;
 }
 
 .preferences-content {
@@ -155,6 +161,7 @@
   margin-top: 28px;
   margin-right: 24px;
   cursor: pointer;
+  transition: background-color var(--duration) var(--timing);
 }
 
 .menu-open:hover,
@@ -174,6 +181,8 @@
   margin-bottom: -2px;
   margin-left: 8px;
   outline: none;
+  transition: color var(--duration) var(--timing),
+    fill var(--duration) var(--timing);
 }
 
 .preferences-link:hover,
@@ -188,14 +197,16 @@
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .preferences-main-block {
+  .preferences-section {
+    padding-top: 187px;
+    padding-bottom: 88px;
     background-image: url(../img/preferences/tablet-bg1x.webp);
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .preferences-main-block {
+    .preferences-section {
       background-image: url(../img/preferences/tablet-bg@2x.webp);
     }
   }
@@ -203,13 +214,11 @@
   .preferences-container-img {
     justify-content: space-between;
     display: flex;
-    padding-top: 150px;
-    margin-top: -35px;
   }
   .preferences-border-apple {
+    margin: 0;
     width: 357px;
     height: 357px;
-    margin: 0 0 60px;
   }
 
   .preferences-circle-apple {
@@ -251,37 +260,33 @@
 
   .preferences-tablet-img {
     display: block;
-    margin-bottom: 130px;
     display: flex;
     align-items: end;
     gap: 44px;
-  }
-
-  .preferences-wraper {
-    padding-bottom: 88px;
+    margin-bottom: 68px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .preferences-main-block {
+  .preferences-section {
+    padding-top: 231px;
+    padding-bottom: 43px;
+    position: relative;
+    top: -164px;
     background-image: url(../img/preferences/descktop-bg1x.webp);
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .preferences-main-block {
+    .preferences-section {
       background-image: url(../img/preferences/desktop-bg@2x.webp);
     }
   }
   .preferences-main-block {
     display: flex;
+    flex-direction: row;
     gap: 90px;
-  }
-
-  .preferences-container-img {
-    padding-top: 231px;
-    margin: 0;
   }
 
   .preferences-border-apple {
@@ -322,10 +327,5 @@
 
   .preferences-tablet-img {
     display: none;
-  }
-
-  .preferences-wraper {
-    padding-top: 260px;
-    padding-bottom: 79px;
   }
 }
