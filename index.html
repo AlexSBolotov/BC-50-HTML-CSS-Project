@@ -21,7 +21,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     
-    <link rel="stylesheet" href="/BC-50-HTML-CSS-Project/assets/index-e1fe28bf.css">
+    <link rel="stylesheet" href="/BC-50-HTML-CSS-Project/assets/index-1485947b.css">
   </head>
   <body>
     <header class="header">
@@ -556,16 +556,14 @@
           required
           minlength="3"
           maxlength="25"
-          pattern="[a-zA-Z]+"
+          pattern="[a-zA-Zа-яА-яіІїЇєЄґҐ]+"
           title="The name must be between 3 and 25 characters"
         />
         <span class="modal-hint">
           <svg class="modal-hint-icon" width="12" height="12">
             <use href="../img/modal/modal-icons.svg#icon-frame"></use>
           </svg>
-          <p class="modal-text-hint">
-            The name must be between 3 and 25 characters
-          </p>
+          The name must be between 3 and 25 characters
         </span>
       </label>
       <label class="modal-form-field">
@@ -574,18 +572,16 @@
           class="modal-input"
           type="tel"
           name="user-phone"
-          placeholder="+38(0_ _) _ _ _   _ _   _ _"
+          placeholder="+38 0_ _ _ _ _  _ _  _ _"
           required
-          pattern="\+[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-          title=" This phone must be in the format  099 000 00 00"
+          pattern="\+[0-9]{2}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
+          title=" This phone must be in the format  +38 099 000 00 00"
         />
         <span class="modal-hint">
           <svg class="modal-hint-icon" width="12" height="12">
             <use href="../img/modal/modal-icons.svg#icon-frame"></use>
           </svg>
-          <p class="modal-text-hint">
-            This phone must be in the format 099 000 00 00
-          </p>
+          This phone must be in the format +38 099 000 00 00
         </span>
       </label>
       <label class="modal-form-field">
@@ -602,7 +598,7 @@
           <svg class="modal-hint-icon" width="12" height="12">
             <use href="../img/modal/modal-icons.svg#icon-frame"></use>
           </svg>
-          <p class="modal-text-hint">Please enter a valid email address</p>
+          Please enter a valid email address
         </span>
       </label>
       <button class="modal-submit-btn" type="submit">Send</button>
