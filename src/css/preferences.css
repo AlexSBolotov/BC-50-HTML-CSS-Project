@@ -271,8 +271,6 @@
   .preferences-section {
     padding-top: 231px;
     padding-bottom: 43px;
-    position: relative;
-    top: -164px;
     background-image: url(../img/preferences/descktop-bg1x.webp);
   }
 
