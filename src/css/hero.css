@@ -133,15 +133,7 @@
 
 @media screen and (min-width: 1280px) {
   .hero-section {
-    padding-top: 0;
-  }
-
-  .hero-container {
-    position: static;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding-top: 159px;
   }
 
   .hero-content-wrap {
@@ -149,21 +141,13 @@
   }
 
   .hero-title {
-    width: 100%;
     font-size: 48px;
     line-height: calc(58 / 48);
     margin-bottom: 28px;
   }
 
-  .hero-text {
-    width: 100%;
-  }
-
   .hero-gallery-wrap {
-    position: relative;
-    display: flex;
-    top: 0;
-    right: 0;
+    top: -159px;
     padding: 14px;
   }
 
