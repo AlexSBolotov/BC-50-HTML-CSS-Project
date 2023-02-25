@@ -26,6 +26,7 @@
 
   background-color: var(--button-green);
   border-radius: 30px;
+  outline: none;
 
   transition-property: background-color;
   transition-duration: var(--duration);
@@ -98,14 +99,15 @@
     background: var(--white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     border-radius: 4px;
+    outline: none;
 
     transition-property: fill;
     transition-duration: var(--duration);
     transition-timing-function: var(--timing);
   }
 
-  .btn-prev:is(:hover),
-  .btn-next:is(:hover) .gallery-icon {
+  .btn-prev:is(:hover, :focus),
+  .btn-next:is(:hover, :focus) .gallery-icon {
     fill: var(--dark-green);
   }
 
