@@ -1,16 +1,15 @@
-.preferences-section {
-  padding: 70px 0 72px;
-  background-image: url(../img/preferences/mobile-bg1x.png);
+.preferences-main-block {
+  background-image: url(../img/preferences/mobile-bg1x.webp);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
+  height: auto;
 }
 
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .preferences-section {
-    background-image: url(../img/preferences/mobile-bg@2x.png);
+  .preferences-main-block {
+    background-image: url(../img/preferences/mobile-bg@2x.webp);
   }
 }
 
@@ -18,11 +17,16 @@
   width: 280px;
   height: 280px;
   display: flex;
-  justify-content: center;
   align-items: center;
   border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.preferences-border-apple:hover {
+  border-color: var(--button-green);
 }
 
 .preferences-circle-apple {
@@ -57,9 +61,19 @@
   transform: translateX(-50%);
 }
 
+.preferences-container-img {
+  display: flex;
+  padding-top: 70px;
+}
+
+.preferences-tablet-img {
+  display: none;
+}
+
 .preferences-wraper {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 72px;
 }
 
 .preferences-content {
@@ -129,6 +143,7 @@
   margin-top: 32px;
   margin-right: auto;
   margin-left: auto;
+  outline: none;
   background: var(--white-color);
   border: 2px solid var(--dark-green);
   border-radius: 30px;
@@ -151,29 +166,50 @@
   color: var(--black);
   font-size: 13.56px;
   line-height: 1.53;
+  outline: none;
 }
 
 .preferences-link-svg {
   fill: var(--black);
   margin-bottom: -2px;
   margin-left: 8px;
+  outline: none;
 }
 
+.preferences-link:hover,
+.preferences-link:focus {
+  color: var(--dark-green);
+}
+
+.preferences-link:hover .preferences-link-svg {
+  fill: var(--dark-green);
+}
+.preferences-tablet-img {
+  display: none;
+}
 @media screen and (min-width: 768px) {
-  .preferences-section {
-    background-image: url(../img/preferences/tablet-bg1x.png);
+  .preferences-main-block {
+    background-image: url(../img/preferences/tablet-bg1x.webp);
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .preferences-section {
-      background-image: url(../img/preferences/tablet-bg@2x.png);
+    .preferences-main-block {
+      background-image: url(../img/preferences/tablet-bg@2x.webp);
     }
+  }
+
+  .preferences-container-img {
+    justify-content: space-between;
+    display: flex;
+    padding-top: 150px;
+    margin-top: -35px;
   }
   .preferences-border-apple {
     width: 357px;
     height: 357px;
+    margin: 0 0 60px;
   }
 
   .preferences-circle-apple {
@@ -196,6 +232,7 @@
     width: 568px;
     font-size: 42px;
     line-height: 1.16;
+    margin-bottom: 20px;
   }
 
   .preferences-description {
@@ -204,21 +241,37 @@
     line-height: 1.5;
   }
 
+  .preferences-content {
+    margin-bottom: 88px;
+  }
+
   .preferences-list {
     flex-wrap: nowrap;
+  }
+
+  .preferences-tablet-img {
+    display: block;
+    margin-bottom: 130px;
+    display: flex;
+    align-items: end;
+    gap: 44px;
+  }
+
+  .preferences-wraper {
+    padding-bottom: 88px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .preferences-section {
-    background-image: url(../img/preferences/descktop-bg1x.png);
+  .preferences-main-block {
+    background-image: url(../img/preferences/descktop-bg1x.webp);
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .preferences-section {
-      background-image: url(../img/preferences/desktop-bg@2x.png);
+    .preferences-main-block {
+      background-image: url(../img/preferences/desktop-bg@2x.webp);
     }
   }
   .preferences-main-block {
@@ -226,9 +279,16 @@
     gap: 90px;
   }
 
+  .preferences-container-img {
+    padding-top: 231px;
+    margin: 0;
+  }
+
   .preferences-border-apple {
     width: 550px;
     height: 550px;
+    display: flex;
+    justify-content: center;
   }
 
   .preferences-circle-apple {
@@ -258,5 +318,14 @@
 
   .preferences-text {
     line-height: 1.5;
+  }
+
+  .preferences-tablet-img {
+    display: none;
+  }
+
+  .preferences-wraper {
+    padding-top: 260px;
+    padding-bottom: 79px;
   }
 }

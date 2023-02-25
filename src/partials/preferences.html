@@ -1,37 +1,57 @@
 <section class="preferences-section">
-  <div class="container preferences-main-block">
-    <div class="preferences-border-apple">
-      <div class="preferences-circle-apple">
-        <picture>
-          <source
-            media="(min-width: 1280px)"
-            width="396"
-            srcset="
-              ./img/preferences/apple-descktop1x.png,
-              ./img/preferences/apple-descktop@2x.png
-            "
-          />
-          <source
-            media="(min-width: 768px)"
-            width="257"
-            srcset="
-              ./img/preferences/apple-tablet1x.png,
-              ./img/preferences/apple-tablet@2x.png
-            "
-          />
-          <img
-            class="preferences-apple"
-            srcset="./img/preferences/apple-mob@2x.png"
-            src="./img/preferences/apple-mob1x.png"
-            alt="Apple"
-            width="202"
-          />
-        </picture>
+  <div class="preferences-main-block container">
+    <div class="preferences-container-img">
+      <div class="preferences-border-apple">
+        <div class="preferences-circle-apple">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              width="396"
+              srcset="
+                ./img/preferences/apple-descktop1x.webp,
+                ./img/preferences/apple-descktop@2x.webp
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              width="257"
+              srcset="
+                ./img/preferences/apple-tablet1x.webp,
+                ./img/preferences/apple-tablet@2x.webp
+              "
+            />
+            <img
+              class="preferences-apple"
+              srcset="./img/preferences/apple-mob@2x.webp"
+              src="./img/preferences/apple-mob1x.webp"
+              alt="Apple"
+              width="202"
+            />
+          </picture>
+        </div>
+      </div>
+
+      <div class="preferences-tablet-img">
+        <img
+          srcset="./img/preferences/testmidl@2x.webp"
+          src="./img/preferences/testmidl.webp"
+          width="166"
+          alt="Apple"
+        />
+
+        <img
+          srcset="./img/preferences/smalltest@2x.webp"
+          src="./img/preferences/smalltest.webp"
+          width="108"
+          alt="Apple"
+        />
       </div>
     </div>
     <div class="preferences-wraper">
       <div class="preferences-content">
-        <h2 class="preferences-title">What’s Special About Our Offerings</h2>
+        <h2 class="preferences-title" id="preferences">
+          What’s Special About Our Offerings
+        </h2>
         <p class="preferences-description">
           With our platform, you can browse through a diverse selection of
           cuisines and local restaurants, and choose from a variety of dishes
@@ -56,14 +76,14 @@
         </li>
       </ul>
       <div class="preferences-btn-link">
-        <button class="menu-open" type="button">
+        <button class="menu-open" type="button" data-modal-open>
           Order Now
         </button>
 
         <a class="preferences-link" href=""
           >Read More
           <svg class="preferences-link-svg" width="13.6" height="13.6">
-            <use href="../img/preferences/preverences.svg#icon-arrow"></use>
+            <use href="./img/preferences/preferences.svg#icon-arrow"></use>
           </svg>
         </a>
       </div>
