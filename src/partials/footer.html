@@ -16,8 +16,14 @@
                 <p class="footer-subscribe-text">Subscribe</p>
                 <div class="footer-input-subscribe-info">
                     <form class="footer-form">
-                        <input class="footer-input-wrap footer-outline" type="email" name="user-email" required
-                            placeholder="Enter your email" />
+                        <div class="footer-input-validation">
+                            <input class="footer-input-wrap footer-outline" type="email"
+          name="user-email"
+          placeholder="example@gmail.com"
+          required
+          title="Please enter a valid email address" />
+                                 <p class="foter-input-text">Not a valid email address (example@email.com)</p>
+                        </div>
                         <button type="submit" class="footer-btn footer-outline">Subscribe</button>
                     </form>
                     <p class="privacy-policy-text">By subscribing you agree to with our&nbsp; <a

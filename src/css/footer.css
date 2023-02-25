@@ -24,7 +24,7 @@
     .footer-form {
         display: flex;
         flex-wrap: wrap;
-        row-gap: 20px;
+        row-gap: 30px;
         flex-direction: column;
         margin-bottom: 24px;
     }
@@ -126,8 +126,7 @@
 
     .footer-menu-link {
         color: var(--border-round-color);
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    }
+transition: color var(--duration) var(—timing);    }
     .footer-menu-link:focus{
         color: var(--button-green);
     }
@@ -226,7 +225,10 @@
     }
 
     .footer-form {
-        margin-bottom: 12px;
+        margin-bottom: 24px;
+        display: flex;
+    }
+    .footer-input-validation{
         display: block;
     }
 }
@@ -314,14 +316,22 @@
 .footer-input-wrap:not(:placeholder-shown):required:invalid {
     border-color: var(--error-background);
 }
-.footer-input-wrap:not(:placeholder-shown):required:valid + .offers-desc {
+.footer-input-wrap:not(:placeholder-shown):required:valid+.foter-input-text {
     display: none;
 }
-.footer-input-wrap:not(:placeholder-shown):required:invalid + .offers-desc {
+
+.footer-input-wrap:not(:placeholder-shown):required:invalid+.foter-input-text {
     display: flex;
     margin-top: 4px;
     -webkit-animation: fadeIn var(--duration);
     animation: fadeIn var(--duration);
+}
+.foter-input-text{
+position: absolute;
+    display: none;
+            font-size: 10px;
+            line-height: 1.5;
+            color: var(--error-color);      
 }
 
 
