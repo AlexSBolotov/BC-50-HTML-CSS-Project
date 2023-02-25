@@ -1,31 +1,29 @@
-.customers-container {
+.customers-section {
      background-image: url(../img/customers/customers-bg.webp);
      background-repeat: no-repeat;
      background-size: 100% 100%;
      height: auto;
+     padding-bottom: 60px;
+     padding-top: 60px;
 }
 
 
 @media screen and (min-device-pixel-ratio:2) and (min-width: 320px), 
 screen and (min-resolution:192dpi) and (min-width: 320px), 
 screen and (min-resolution:2dppx) and (min-width: 320px) {
-     .customers-container  {
+     .customers-section  {
           background-image: url(../img/customers/customers-bg@2x.webp);
      }
 }
 
 .customers-title {
-     font-style: normal;
      font-weight: 700;
      font-size: 28px;
      line-height: 1.17;
      color: var(--black);
-     padding-top: 60px;
 }
 
 .customers-subtitle-mobile {
-     font-style: normal;
-     font-weight: 400;
      font-size: 14px;
      line-height: 1.14;
      color:var(--black);  
@@ -37,8 +35,6 @@ screen and (min-resolution:2dppx) and (min-width: 320px) {
      display: flex;
      gap:24px;
      flex-direction: column;
-     padding-bottom: 60px;
-
 }
 
 .customers-article {
@@ -56,7 +52,6 @@ screen and (min-resolution:2dppx) and (min-width: 320px) {
 
 
 .customers-review {
-     font-style: normal;
      font-weight: 700;
      font-size: 16px;
      line-height: 1.18;
@@ -68,6 +63,7 @@ screen and (min-resolution:2dppx) and (min-width: 320px) {
      width:48px;
      height:48px;
 }
+
 
 .customers-info {
      display: flex;
@@ -99,66 +95,55 @@ screen and (min-resolution:2dppx) and (min-width: 320px) {
 }
 
 .customers-description {
-     font-style: normal;
-     font-weight: 400;
      font-size: 14px;
      line-height: 1.5;
      color: var(--black);
 }
 
 @media screen and (min-width: 480px) and (max-width:767px)  {
-     .customers-container {
+     .customers-section {
           background-repeat: no-repeat;
           background-size: 100% 100%;
           height: auto;
+          padding-bottom: 60px;
+          padding-top: 60px;
           background-image: url(../img/customers/customers-bg-mobile.webp);
      }    
 }
 
+
 @media screen and (min-device-pixel-ratio:2) and (min-width: 480px), 
 screen and (min-resolution:192dpi) and (min-width: 480px), 
 screen and (min-resolution:2dppx) and (min-width: 480px) {
-     .customers-container {
+     .customers-section {
           background-image: url(../img/customers/customers-bg-mobile@2x.webp);
      }
 }
 
 
+
+
+
 @media screen and (min-width:768px) and (max-width:1279px)  {
-     .customers-container {
+     .customers-section {
           background-repeat: no-repeat;
           background-size: 100% 100%;
           height: auto;
+          padding-bottom: 120px;
+          padding-top: 60px;
           background-image: url(../img/customers/customers-tablet.webp);
      }    
 }
 
-     
+
 @media screen and (min-device-pixel-ratio:2) and (min-width: 768px), 
 screen and (min-resolution:192dpi) and (min-width: 768px), 
 screen and (min-resolution:2dppx) and (min-width: 768px) {
-     .customers-container {
+     .customers-section {
           background-image: url(../img/customers/customers-tablet@2x.webp);
      }
 }
 
-@media screen and (min-width:1280px) {
-     .customers-container {
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-          height: auto;
-          background-image: url(../img/customers/customers-desktop.webp);
-     }    
-}
-
-     
-@media screen and (min-device-pixel-ratio:2) and (min-width: 1280px), 
-screen and (min-resolution:192dpi) and (min-width: 1280px), 
-screen and (min-resolution:2dppx) and (min-width: 1280px) {
-     .customers-container {
-          background-image: url(../img/customers/customers-desktop@2x.webp);
-     }
-}
 
 
 @media screen and (min-width:768px) and (max-width:1279px)  {
@@ -175,7 +160,7 @@ screen and (min-resolution:2dppx) and (min-width: 1280px) {
           display: flex;
           gap:32px;
           flex-direction: row;
-          padding-bottom: 120px;
+
      }
      
      .customers-article {
@@ -192,8 +177,6 @@ screen and (min-resolution:2dppx) and (min-width: 1280px) {
      }
      
      .customers-subtitle {
-          font-style: normal;
-          font-weight: 400;
           font-size: 16px;
           line-height: 1.18;
           color: var(--black);
@@ -202,17 +185,47 @@ screen and (min-resolution:2dppx) and (min-width: 1280px) {
      }
 }
 
+
+
+
 @media screen and (min-width:320px) and (max-width:479px)  {
      .customers-subtitle {
           display: none;
      }
 }   
 
+
+
+
+
 @media screen and (min-width:480px) and (max-width:767px)  {
      .customers-subtitle {
           display: none;
      }
      
+}
+
+
+
+
+@media screen and (min-width:1280px) {
+      .customers-section {
+          padding-top: 100px;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          height: auto;
+          padding-bottom: 200px;
+          background-image: url(../img/customers/customers-desktop.webp);
+     }
+}
+
+
+@media screen and (min-device-pixel-ratio:2) and (min-width: 1280px), 
+screen and (min-resolution:192dpi) and (min-width: 1280px), 
+screen and (min-resolution:2dppx) and (min-width: 1280px) {
+     .customers-section {
+          background-image: url(../img/customers/customers-desktop@2x.webp);
+     }
 }
 
 @media screen and (min-width:1280px)   {
@@ -226,15 +239,12 @@ screen and (min-resolution:2dppx) and (min-width: 1280px) {
      }
 
      .customers-title {
-          padding-top: 100px;
           margin-bottom: 20px;
           font-size: 42px;
           line-height: 1.16;
      }
 
      .customers-subtitle {
-          font-style: normal;
-          font-weight: 400;
           font-size: 16px;
           line-height: 1.18;
           color:var(--black);
@@ -242,12 +252,13 @@ screen and (min-resolution:2dppx) and (min-width: 1280px) {
 
      .customers-list {
           flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
           gap: 139px;
-          padding-bottom: 200px;
           margin-top: 32px;
+     
      }
      
-
      .customers-review {
           font-size: 18px;
           line-height: 1.16;
