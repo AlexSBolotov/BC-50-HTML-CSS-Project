@@ -33,6 +33,7 @@
   padding: 17px;
   border-radius: 50%;
   border: 11px solid var(--yellow-main);
+  outline: none;
 
   transition: border-color var(--duration) var(--timing);
 }
