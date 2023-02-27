@@ -27,6 +27,7 @@
         row-gap: 30px;
         flex-direction: column;
         margin-bottom: 24px;
+
     }
 
     .footer-block-additional-info {
@@ -61,13 +62,10 @@
         background-image: url('../img/footer/mobile/bottomgroup.webp'), url('../img/footer/mobile/legtgroup.webp'), url('../img/footer/mobile/rightgroup.webp');
             background-repeat: no-repeat, no-repeat, no-repeat;
             background-position: bottom, left top 31%, right top;
-}
-    .footer-block {
-        padding-top: 60px;
-        padding-bottom: 60px;
-
-
-    }
+padding-top: 60px;
+    padding-bottom: 60px;
+        }
+   
 
     .privacy-policy-text {
         font-size: 10px;
@@ -118,11 +116,10 @@
             background-repeat: no-repeat, no-repeat;
             background-position: bottom, right center ;
             background-size: contain, auto;
+            padding-top: 100px;
+                padding-bottom: 100px;
         }
-    .footer-block {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
+
 
     .footer-menu-link {
         color: var(--border-round-color);
@@ -153,6 +150,7 @@ transition: color var(--duration) var(—timing);    }
         /* margin-bottom: 12px; */
         display: flex;
         flex-direction: row;
+        gap: 13px;
     }
 }
 
@@ -167,11 +165,10 @@ transition: color var(--duration) var(—timing);    }
             background-repeat: no-repeat;
             background-position: bottom center;
             background-size: contain;
+            padding-top: 100px;
+                padding-bottom: 100px;
 }
-    .footer-block {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
+
 
     .footer-subscribe-block {
         margin-top: 0;
@@ -227,6 +224,7 @@ transition: color var(--duration) var(—timing);    }
     .footer-form {
         margin-bottom: 24px;
         display: flex;
+        gap: 13px;
     }
     .footer-input-validation{
         display: block;
@@ -263,7 +261,7 @@ transition: color var(--duration) var(—timing);    }
 }
 
 .footer-input-wrap {
-    margin-right: 13px;
+    /* margin-right: 13px; */
     width: 279px;
     height: 42px;
     background: var(--white-round);
