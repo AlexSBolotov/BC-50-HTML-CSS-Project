@@ -266,26 +266,26 @@ screen and (min-resolution:2dppx) and (min-width: 1280px) {
 
      .customers-link-one {
           transition: box-shadow var(--duration) var(--timing);
+          display:block;
+          border-radius: 0px 30px 30px 30px;
      }
 
      .customers-link-one:hover,
      .customers-link-one:focus {
           box-shadow: -10px 20px 0 0 var(--button-green);
-          border-radius: 0px 30px 30px 30px;
           outline: none;
-          display:block;
      }
 
      .customers-link-two {
           transition: box-shadow var(--duration) var(--timing);
+          display:block;
+          border-radius: 0px 30px 30px 30px;
      }
 
      .customers-link-two:hover,
      .customers-link-two:focus {
           box-shadow: 10px -20px var(--button-green);
-          border-radius: 0px 30px 30px 30px;
           outline: none;
-          display:block;
      }
 }
 
