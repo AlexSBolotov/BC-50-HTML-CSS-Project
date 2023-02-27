@@ -1,138 +1,153 @@
-.offers-section {
+@media screen and (min-width:320px){
+    .offers-section {
     position: relative;
     padding-top: 52px;
     padding-bottom: 60px;
-}
+    }
 
-.offers-title {
+    .offers-title {
 
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
 
-.offers-text {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 24px;
-}
+    .offers-text {
+        display: none;
+    }
 
-.offers-form {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-}
 
-.offers-wrap {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
+    .offers-text-mobile {
+        font-size: 14px;
+        line-height: 1.14;
+        margin-bottom: 40px;
+    }
 
-.offers-input {
-  
-    width: 100%;
-    height: 42px;
-    background-color: var(--color-background);
-    outline: none;
-    border: 0.854167px solid var(--yellow-main);
-    border-radius: 30px;
-    padding:0px 0px 0px 11px;
+
+
+    .offers-form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .offers-wrap {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .offers-input {
     
-}
+        width: 100%;
+        height: 42px;
+        background-color: var(--color-background);
+        outline: none;
+        border: 0.854167px solid var(--yellow-main);
+        border-radius: 30px;
+        padding:0px 0px 0px 11px;
+        
+    }
 
-.offers-input::placeholder {
-    font-size: 12px;
-    line-height: 1.5;
-    color: #505050;
+    .offers-input::placeholder {
+        font-size: 12px;
+        line-height: 1.5;
+        color: #505050;
+        
+    }
+
+    .offers-input:not(:placeholder-shown):required:valid {
+        border-color: var(--dark-green);
+    }
+
+    .offers-input:not(:placeholder-shown):required:invalid {
+        border-color:  var(--error-background);
+    }
+
+    .offers-desc {
+        position: absolute;
+        display: none;
+        bottom: -16px;
+
+
+    }
+
+    .offers-input-text {
+        margin-left: 4px;
+        font-size: 10px;
+        line-height: 1.5;
+        color: var(--error-color);
+
+    }
+
+    .offers-input:not(:placeholder-shown):required:valid + .offers-desc {
+        display: none;
+    }
+    .offers-input:not(:placeholder-shown):required:invalid + .offers-desc {
+        display: flex;
+        margin-top: 4px;
+        -webkit-animation: fadeIn var(--duration);
+        animation: fadeIn var(--duration);
+    }
+
+    @-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    }
+
+    @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    }
+
+    .offers-btn {
+        
+        width: 103px;
+        height: 42px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 1.5;
+        background-color: var(--button-green);
+        border-radius: 30px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        margin-left: auto;
+        
+        outline: none;
+    }
+
+    .offers-btn:focus,
+    .offers-btn:hover {
+        background-color: var(--yellow-button);
+    }
+
+    .offers-image {
+        position: absolute;
+        content: " ";
+        width: 280px;
+        
+        top: -43px;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        
+    }
+
+
+
+}
     
-}
-
-.offers-input:not(:placeholder-shown):required:valid {
-    border-color: var(--dark-green);
-}
-
-.offers-input:not(:placeholder-shown):required:invalid {
-    border-color:  var(--error-background);
-}
-
-.offers-desc {
-    position: absolute;
-    display: none;
-    bottom: -16px;
 
 
-}
-
-.offers-input-text {
-    margin-left: 4px;
-    font-size: 10px;
-    line-height: 1.5;
-    color: var(--error-color);
-
-}
-
-.offers-input:not(:placeholder-shown):required:valid + .offers-desc {
-    display: none;
-}
-.offers-input:not(:placeholder-shown):required:invalid + .offers-desc {
-    display: flex;
-    margin-top: 4px;
-    -webkit-animation: fadeIn var(--duration);
-    animation: fadeIn var(--duration);
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.offers-btn {
-    
-    width: 103px;
-    height: 42px;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.5;
-    background-color: var(--button-green);
-    border-radius: 30px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-left: auto;
-    /* margin-top: 20px; */
-    outline: none;
-}
-
-.offers-btn:focus,
-.offers-btn:hover {
-    background-color: var(--yellow-button);
-}
-
-.offers-image {
-    position: absolute;
-    content: " ";
-    width: 280px;
-    
-    top: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    
-    
-}
 
 @media screen and (min-width:480px) {
   
@@ -140,14 +155,13 @@
     .offers-title {
         width: 100%;
         font-size: 28px;
-        
         margin-bottom: 20px;
     }
 
     .offers-text {
-        font-size: 14px;
-        line-height: 1.14;
+        display: none;
     }
+
 
     .offers-form {
         width: 100%;
@@ -179,10 +193,16 @@
     }
 
     .offers-text {
+        display: block;
         width: 520px;
         font-size: 16px;
         line-height: 1.5;
+        margin-bottom: 24px;
         
+    }
+
+    .offers-text-mobile {
+        display: none;
     }
 
     .offers-form {
@@ -203,7 +223,7 @@
 
     .offers-image {
         width: 281px;
-        top: -70px;
+        top: -75px;
         left: 25%;
         transform: translateX(93%);
     }
@@ -212,10 +232,19 @@
 
 @media screen and (min-width: 1280px) {
     .offers-section {
-        padding: 50px 0px 100px;
+        padding-top: 0;
     }
 
-      .offers-form {
+
+    .offers-title {
+        font-size: 42px;
+    }
+
+    .offers-text-mobile {
+        display: none;
+    }
+
+    .offers-form {
         gap: 32px;
         
     }
@@ -227,7 +256,6 @@
 
     .offers-image {
         width: 608px;
-        top: 0;
         left: 50%;
         transform: none;
     }
