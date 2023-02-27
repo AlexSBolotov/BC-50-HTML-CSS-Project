@@ -47,10 +47,10 @@
   margin: 12px;
 }
 .preferences-apple {
-  position: absolute;
   top: -40px;
   left: 25px;
   z-index: 1;
+  position: absolute;
   transition: transform var(--duration) var(--timing);
 }
 
@@ -92,8 +92,6 @@
 }
 
 .preferences-title {
-  width: 100%;
-  font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
   color: var(--black);
@@ -101,7 +99,6 @@
 }
 
 .preferences-description {
-  width: 100%;
   font-size: 14px;
   line-height: 1.42;
   color: var(--black);
@@ -114,7 +111,6 @@
 }
 
 .preferences-subtitle {
-  font-weight: 700;
   font-size: 18px;
   line-height: 1.166;
   color: var(--black);
@@ -317,7 +313,6 @@
   }
 
   .preferences-title {
-    width: 526.17px;
     line-height: 1.19;
   }
 
