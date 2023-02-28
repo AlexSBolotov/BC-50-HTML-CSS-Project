@@ -22,11 +22,8 @@ screen and (min-resolution:2dppx) {
      color: var(--black);
 }
 
-.customers-subtitle {
-     display: none;
-}
 
-.customers-subtitle-mobile {
+.customers-subtitle {
      font-size: 14px;
      line-height: 1.14;
      color:var(--black);  
@@ -146,14 +143,6 @@ screen and (min-resolution:2dppx) {
      .customers-subtitle {
           font-size: 16px;
           line-height: 1.18;
-          color: var(--black);
-          margin-top: 20px;
-          margin-bottom: 32px;
-          display: block;
-     }
-
-     .customers-subtitle-mobile {
-          display: none;
      }
 
      .customers-list {
